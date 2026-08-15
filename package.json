@@ -1,0 +1,81 @@
+{
+  "name": "package-usage-tracker",
+  "displayName": "Package Usage Tracker",
+  "description": "Inline in package.json: see whether each dependency is actually used, how many times, and in which files — without leaving the file.",
+  "version": "0.1.0",
+  "publisher": "YOUR-PUBLISHER-ID",
+  "author": {
+    "name": "Sundaram Singh"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR-USERNAME/know-your-package.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YOUR-USERNAME/know-your-package/issues"
+  },
+  "homepage": "https://github.com/YOUR-USERNAME/know-your-package#readme",
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#1e1e1e",
+    "theme": "dark"
+  },
+  "categories": [
+    "Other",
+    "Linters"
+  ],
+  "keywords": [
+    "package",
+    "dependencies",
+    "unused dependencies",
+    "imports",
+    "npm",
+    "package.json",
+    "dependency checker",
+    "dead code",
+    "package tracker",
+    "package usage tracker",
+    "track your package",
+    "know your package",
+    "package usage",
+    "usage tracker"
+  ],
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "activationEvents": [
+    "onLanguage:json",
+    "onLanguage:jsonc"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "pkgUsage.seeMore",
+        "title": "See more for this dependency",
+        "category": "Know Your Package"
+      },
+      {
+        "command": "pkgUsage.searchWorkspace",
+        "title": "Search workspace for this dependency",
+        "category": "Know Your Package"
+      },
+      {
+        "command": "pkgUsage.refresh",
+        "title": "Refresh scan",
+        "category": "Know Your Package"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.4.0"
+  }
+}
