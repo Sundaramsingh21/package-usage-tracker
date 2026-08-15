@@ -3,19 +3,19 @@
   "displayName": "Package Usage Tracker",
   "description": "Inline in package.json: see whether each dependency is actually used, how many times, and in which files — without leaving the file.",
   "version": "0.1.0",
-  "publisher": "YOUR-PUBLISHER-ID",
+  "publisher": "sundaramsingh",
   "author": {
     "name": "Sundaram Singh"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/YOUR-USERNAME/know-your-package.git"
+    "url": "https://github.com/Sundaramsingh21/package-usage-tracker.git"
   },
   "bugs": {
-    "url": "https://github.com/YOUR-USERNAME/know-your-package/issues"
+    "url": "https://github.com/Sundaramsingh21/package-usage-tracker/issues"
   },
-  "homepage": "https://github.com/YOUR-USERNAME/know-your-package#readme",
+  "homepage": "https://github.com/Sundaramsingh21/package-usage-tracker#readme",
   "icon": "icon.png",
   "galleryBanner": {
     "color": "#1e1e1e",
